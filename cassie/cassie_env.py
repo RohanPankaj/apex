@@ -43,7 +43,9 @@ class CassieEnv:
         dirname = os.path.dirname(__file__)
         if traj == "walking":
             traj_path = os.path.join(dirname, "trajectory", "stepdata.bin")
-
+        #NOTE: walking backwards code added by Rohan 
+        elif traj == "walking-backwards":
+            traj_path = ps.path.join(dirname, "trajetory", "walking-backwards-stepdata.bin")
         elif traj == "stepping":
             # traj_path = os.path.join(dirname, "trajectory", "spline_stepping_traj.pkl")
             traj_path = os.path.join(dirname, "trajectory", "more-poses-trial.bin")

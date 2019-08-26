@@ -44,6 +44,11 @@ class CassieEnv_speed_dfreq:
         if traj == "walking":
             traj_path = os.path.join(dirname, "trajectory", "stepdata.bin")
 
+
+        #NOTE: Walking backwards added by Rohan 
+        elif traj == "walking backwards":
+            traj_path = os.path.join(dirname, "backwards-walking-stepdata.bin") #TODO: Create "Backwards-walking0stepdata.bin"
+
         elif traj == "stepping":
             # traj_path = os.path.join(dirname, "trajectory", "spline_stepping_traj.pkl")
             traj_path = os.path.join(dirname, "trajectory", "more-poses-trial.bin")
