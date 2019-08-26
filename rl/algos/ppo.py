@@ -209,7 +209,7 @@ class PPO:
 
                 state = torch.Tensor(next_state)
 
-                traj_len += 1
+                traj_len += 1 #NOTE: I think this should be mad -=
                 num_steps += 1
 
             value, _ = policy.act(state)
